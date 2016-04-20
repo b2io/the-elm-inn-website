@@ -1,0 +1,100 @@
+.grid {
+  font-size: 0;
+  text-justify: distribute-all-lines;
+
+  &__cell {
+    @include fontsize(m);
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+
+    @include bp-s {
+      width: 50%;
+    }
+
+    @include bp-m {
+      width: 33.3334%;
+
+      &--1-of-2 {
+        width: 50% !important;
+      }
+    }
+
+    @include bp-l {
+      width: 25%;
+
+      &--1-of-3 {
+        width: 33.3334% !important;
+      }
+
+      &--2-of-3 {
+        width: 66.6667% !important;
+      }
+    }
+
+    @include bp-xl {
+      width: 20%;
+
+      &--1-of-4 {
+        width: 25% !important;
+      }
+
+      &--2-of-4 {
+        width: 50% !important;
+      }
+
+      &--3-of-4 {
+        width: 75% !important;
+      }
+    }
+
+    @include bp-xxl {
+      width: 16.6667%;
+
+      &--1-of-5 {
+        width: 20% !important;
+      }
+
+      &--2-of-5 {
+        width: 40% !important;
+      }
+
+      &--3-of-5 {
+        width: 60% !important;
+      }
+
+      &--4-of-5 {
+        width: 80% !important;
+      }
+
+      &--1-of-6 {
+        width: 16.6667% !important;
+      }
+    }
+  }
+
+  &--guttered {
+    margin: 0 ($gutter / 2) * -1;
+
+    .grid__cell {
+      padding: 0 $gutter / 2;
+    }
+
+    &--s {
+      margin: 0 ($gutter-s / 2) * -1;
+
+      .grid__cell {
+        padding: 0 $gutter-s / 2;
+      }
+    }
+
+    &--l {
+      margin: 0 ($gutter-l / 2) * -1;
+
+      .grid__cell {
+        padding: 0 $gutter-l / 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// Font stacks
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-mono: Consolas, "Liberation Mono", Courier, monospace !default;
+
+// Weights
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Sizes
+
+$font-size-xxs: $base-size * .625; // 10px
+$line-height-xxs: $base-size * .875; // 14px
+
+$font-size-xs: $base-size * .75; // 12px
+$line-height-xs: $base-size * 1.125; // 18px
+
+$font-size-s: $base-size * .875; // 14px
+$line-height-s: $base-size * 1.25; // 20px
+
+$font-size-m: $base-size * 1; // 16px
+$line-height-m: $base-size * 1.5; // 24px
+
+$font-size-l: $base-size * 1.5; // 24px
+$line-height-l: $base-size * 2; // 32px
+
+$font-size-xl: $base-size * 2; // 32px
+$line-height-xl: $base-size * 2.5; // 40px
+
+$font-size-xxl: $base-size * 3; // 48px
+$line-height-xxl: $base-size * 3.5; // 56px

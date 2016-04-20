@@ -1,0 +1,106 @@
+.btn {
+  background: get-color(button);
+  border: $button-border solid get-color(button, base-border);
+  border-radius: $button-radius;
+  box-shadow: none;
+  color: get-color(button, base-text);
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-m;
+  height: $button-height;
+  line-height: 1;
+  margin: 0 0 $global-spacing;
+  padding: 0 $spacing-m;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: baseline;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  @include transition-out();
+
+  &:hover {
+    background: get-color(button, base-hover);
+    border-color: get-color(button, base-border-hover);
+    color: get-color(button, base-text-hover);
+    @include transition-in();
+  }
+
+  &:active {
+    background: get-color(button, base-hover);
+    border-color: get-color(button, base-border-hover);
+    color: get-color(button, base-text-hover);
+  }
+
+  &--secondary {
+    background: get-color(button, secondary);
+    border-color: get-color(button, secondary-border);
+    box-shadow: none;
+    color: get-color(button, secondary-text);
+
+    &:hover {
+      background: get-color(button, secondary-hover);
+      border-color: get-color(button, secondary-border-hover);
+      color: get-color(button, secondary-text-hover);
+    }
+
+    &:active {
+      background: get-color(button, secondary-hover);
+      border-color: get-color(button, secondary-border-hover);
+      color: get-color(button, secondary-text-hover);
+    }
+
+  }
+
+  &--disabled {
+    opacity: .375;
+    pointer-events: none;
+  }
+
+  &--link {
+    background: transparent !important;
+    border: 0 none;
+    color: get-color(text, link);
+    font-size: $font-size-m;
+    padding: 0;
+    text-align: left;
+    width: auto;
+
+    &:hover {
+      color: get-color(text, link-hover);
+    }
+
+    &:active {
+      color: get-color(text, link-hover);
+    }
+  }
+
+  &--s {
+    font-size: $font-size-xs;
+    height: $button-s-height;
+    padding: 0 $spacing-s;
+  }
+
+  &--l {
+    font-size: $font-size-l;
+    height: $button-l-height;
+    padding: 0 $spacing-l;
+  }
+
+  @include bp-s {
+    width: auto;
+  }
+
+}
+
+// Firefox Fix
+
+button::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file] > input[type=button]::-moz-focus-inner {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

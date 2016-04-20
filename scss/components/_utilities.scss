@@ -1,0 +1,68 @@
+.maxwidth {
+  margin-left: auto;
+  margin-right: auto;
+
+  &--xs {
+    max-width: $screen-width-xs;
+  }
+
+  &--s {
+    max-width: $screen-width-s;
+  }
+
+  &--m {
+    max-width: $screen-width-m;
+  }
+
+  &--l {
+    max-width: $screen-width-l;
+  }
+
+  &--xl {
+    max-width: $screen-width-xl;
+  }
+
+  &--xxl {
+    max-width: $screen-width-xxl;
+  }
+
+  &--xxxl {
+    max-width: $screen-width-xxxl;
+  }
+}
+
+.align--left {
+  text-align: left;
+}
+
+.align--right {
+  text-align: right;
+}
+
+.align--center {
+  text-align: center;
+}
+
+.align--justify {
+  text-align: justify;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.clearfix {
+  @include clearfix;
+}

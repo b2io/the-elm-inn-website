@@ -1,0 +1,44 @@
+@import "../vendors/normalize";
+
+* {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  background: get-color(background, html);
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: get-color(background, body);
+  height: 100%;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+
+  &--guttered {
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    &--s {
+      padding-left: $gutter-s;
+      padding-right: $gutter-s;
+    }
+
+    &--l {
+      padding-left: $gutter-l;
+      padding-right: $gutter-l;
+    }
+  }
+}

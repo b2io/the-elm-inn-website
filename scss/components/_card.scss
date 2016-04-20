@@ -1,0 +1,16 @@
+.card {
+  background: get-color(background);
+  border: 0;
+  border-radius: $global-border-radius;
+  box-shadow: $global-box-shadow;
+  margin-bottom: $global-spacing;
+  overflow: hidden;
+
+  .card__inner {
+    padding: $spacing-m;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

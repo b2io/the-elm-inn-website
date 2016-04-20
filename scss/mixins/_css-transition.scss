@@ -1,0 +1,9 @@
+@mixin transition-in($property:all, $speed:$transition-timing-default, $ease:$transition-easing-default) {
+  -webkit-transition: $property $speed $ease;
+  transition: $property $speed $ease;
+}
+
+@mixin transition-out($property:all, $speed:$transition-timing-default * 2, $ease:$transition-easing-default) {
+  -webkit-transition: $property $speed $ease;
+  transition: $property $speed $ease;
+}

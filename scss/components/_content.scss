@@ -1,0 +1,15 @@
+.content {
+  background: get-color(background, light);
+  padding: $spacing-m 0;
+
+  header {
+    margin-bottom: $spacing-xxl;
+    margin-top: $spacing-xl;
+    position: relative;
+
+    h2 + h3 {
+      font-weight: normal;
+      margin-top: -$global-spacing;
+    }
+  }
+}

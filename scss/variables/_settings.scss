@@ -1,0 +1,40 @@
+// global base size
+$base-size: 16px;
+
+// global spacing/sizing
+
+$spacing-xxs: $base-size / 8; // 16px / 8   = 2px
+$spacing-xs: $base-size / 4; // 16px / 4   = 4px
+$spacing-s: $base-size / 2; // 16px / 2   = 8px
+$spacing-m: $base-size; // 16px * 1   = 16px
+$spacing-l: $base-size * 1.5; // 16px * 1.5 = 24px
+$spacing-xl: $base-size * 2; // 16px * 2   = 32px
+$spacing-xxl: $base-size * 3; // 16px * 2   = 48px
+$spacing-xxxl: $base-size * 4; // 16px * 2   = 64px
+
+// global gutter sizing
+
+$gutter-s: $spacing-s;
+$gutter: $spacing-m;
+$gutter-l: $spacing-l;
+
+// global style and spacing
+
+$global-border-radius: 3px;
+$global-box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+$global-spacing: $spacing-m; // Applied to all block elements
+
+// global transitions
+
+$transition-timing-default: 100ms;
+$transition-easing-default: ease-in-out;
+
+// global screen sizes
+
+$screen-width-xs: 320px; // Smartphone
+$screen-width-s: 480px; // Smartphone, landscape
+$screen-width-m: 600px; // Phablet
+$screen-width-l: 768px; // Tablet
+$screen-width-xl: 992px; // Laptop
+$screen-width-xxl: 1280px; // Screen
+$screen-width-xxxl: 1600px; // Big screen

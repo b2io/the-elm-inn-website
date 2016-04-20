@@ -1,0 +1,22 @@
+{
+  "name": "the-elm-inn-website",
+  "version": "0.0.1",
+  "description": "Website for The Elm Inn",
+  "main": "index.html",
+  "homepage": "http://mrmrs.io/nkd",
+  "author": "http://base2.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b2io/the-elm-inn-website.git"
+  },
+  "keywords": [
+    "Elm Inn",
+    "Cooperstown"
+  ],
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-surge": "^0.1.0"
+  }
+}
