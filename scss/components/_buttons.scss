@@ -49,7 +49,6 @@
       border-color: get-color(button, secondary-border-hover);
       color: get-color(button, secondary-text-hover);
     }
-
   }
 
   &--disabled {
@@ -90,7 +89,6 @@
   @include bp-s {
     width: auto;
   }
-
 }
 
 // Firefox Fix

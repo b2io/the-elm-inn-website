@@ -1,0 +1,23 @@
+.opening-soon {
+  &__content {
+    @extend .content;
+  }
+
+  &__banner {
+    margin: 2em 0;
+  }
+
+  &__button {
+    @extend .btn, .btn--secondary;
+    padding-top: .6em;
+  }
+
+  #toggle-application,
+  #application {
+    display: none;
+  }
+
+  #toggle-application:checked + #application {
+    display: block;
+  }
+}

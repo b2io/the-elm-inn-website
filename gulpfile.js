@@ -1,6 +1,6 @@
+var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
 var surge = require('gulp-surge');
 
 gulp.task('sass', function(){
