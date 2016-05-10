@@ -1,7 +1,5 @@
 .opening-soon {
-  &__content {
-    @extend .content;
-  }
+  background-color: get-color(background, light);
 
   &__banner {
     margin: 2em 0;
@@ -9,6 +7,7 @@
 
   &__button {
     @extend .btn, .btn--secondary;
+    cursor: pointer;
     padding-top: .6em;
   }
 
@@ -19,5 +18,11 @@
 
   #toggle-application:checked + #application {
     display: block;
+  }
+
+  #application {
+    background-color: $color-white;
+    margin-top: 2em;
+    padding-top: 1em;
   }
 }
