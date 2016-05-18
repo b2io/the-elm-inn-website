@@ -33,8 +33,10 @@
 // Print Styles
 @import "components/print";
 
-// Views
-@import "views/opening-soon";
+// Pages
+@import "pages/index";
+@import "pages/apply-now";
 
 // Templates
-@import "templates/flex-base";
+@import "templates/full-height-footer";
+//@import "templates/full-screen-image";

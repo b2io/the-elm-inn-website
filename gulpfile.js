@@ -7,14 +7,14 @@ var surge = require('gulp-surge');
 gulp.task('sass', function() {
   return gulp.src('./scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./scss'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
 
 gulp.task('autoprefix', function() {
-  return gulp.src('./css/styles.css')
+  return gulp.src('./scss/styles.css')
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
@@ -34,7 +34,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('default', ['browserSync', 'sass', 'autoprefix'], function() {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch('./scss/**/*.scss', ['sass', 'autoprefix']);
   gulp.watch('./*.html', browserSync.reload);
   gulp.watch('./js/**/*.js', browserSync.reload);
 });
