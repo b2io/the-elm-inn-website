@@ -1,0 +1,61 @@
+.welcome {
+  background: url("../../images/welcome.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  &__address {
+    color: white;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+
+    @media screen and (max-width: 40em) {
+      left: 5px;
+    }
+  }
+
+  &__address .icon {
+    float: left;
+    font-size: 2em;
+    margin-top: .25em;
+  }
+
+  &__address-text {
+    display: block;
+    float: left;
+    margin-left: .5em;
+  }
+
+  &__logo {
+    margin-top: 20vh;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__logo-image {
+    width: 200px;
+  }
+
+  &__logo-text {
+    color: white;
+  }
+
+  &__primary-buttons {
+    margin: auto;
+    width: 300px;
+  }
+
+  &__book-button,
+  &__apply-button {
+    @extend .btn, .btn--secondary;
+    color: white;
+    border-color: white;
+    width: 100%;
+  }
+}
+

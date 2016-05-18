@@ -1,4 +1,4 @@
-.apply-now {
+.book-now {
   background-color: get-color(background, light);
 
   section:first-of-type {
@@ -6,8 +6,9 @@
   }
 
   &__back-link {
+    color: white;
     float: left;
-    margin: 1em 0 0;
+    margin: 1em;
   }
 
   &__banner {

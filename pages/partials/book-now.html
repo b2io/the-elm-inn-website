@@ -1,0 +1,52 @@
+<content class="book-now">
+  <section class="wrap wrap--guttered maxwidth maxwidth--l align--center">
+    <a class="book-now__back-link" href="../../">&#8592; Back to The Elm Inn</a>
+    <img class="apply-now__banner" src="../../images/elm-inn__opening-soon-banner.png" alt="The Elm Inn opens in May">
+  </section>
+
+  <section class="content">
+    <div class="application">
+      <header class="wrap wrap--guttered maxwidth maxwidth--l align--center">
+        <h2>Come and stay with us at The Elm Inn!</h2>
+        <h3 class="text--light">Give us a call or fill out the form to check room availability.</h3>
+      </header>
+      <div class="wrap wrap--guttered maxwidth maxwidth--l">
+        <form class="flexform" action="https://formspree.io/dar@theelminn.com" method="POST">
+          <fieldset>
+            <div>
+              <label>What's your name?</label>
+              <input type="text" name="Name" placeholder="Enter your full name">
+            </div>
+            <div>
+              <label>What's your email address?</label>
+              <input type="email" name="Email" placeholder="Enter your email address">
+            </div>
+            <div>
+              <label>What's your phone number?</label>
+              <input type="tel" name="Phone" placeholder="Enter your phone number">
+            </div>
+            <div>
+              <label>When are you available?</label>
+              <input type="date" name="Date Available">
+            </div>
+            <div>
+              <label>Anything you'd like to say about yourself?</label>
+              <textarea name="About Me" placeholder="Enter your message"></textarea>
+            </div>
+          </fieldset>
+          <input type="text" name="_format" value="plain" class="hide" />
+          <input type="text" name="_gotcha" class="hide" />
+          <input type="hidden" name="_next" value="thank-you.html" />
+          <input type="hidden" name="_subject" value="Employment Application from Elm Inn website" />
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="wrap wrap--guttered maxwidth maxwidth--xl">
+      <p>Copyright &copy; 2016 by <a href="/" title="Cooperstown Elm Inn">The Elm Inn</a></p>
+    </div>
+  </footer>
+</content>

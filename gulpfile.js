@@ -7,7 +7,7 @@ var surge = require('gulp-surge');
 gulp.task('sass', function() {
   return gulp.src('./scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./scss'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({
       stream: true
     }))

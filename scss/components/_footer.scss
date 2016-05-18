@@ -1,7 +1,8 @@
 footer[role=contentinfo] {
   background: get-color(background, footer);
-  color: get-color(text, inverted);
+  color: get-color(text, light);
   padding: $spacing-xxl 0;
+  text-align: center;
 
   a {
     color: get-color(text, link-inverted);
