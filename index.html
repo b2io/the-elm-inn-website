@@ -13,57 +13,37 @@
 
   <body>
 
-    <!-- navigation -->
-    <nav class="pages-nav">
-      <div class="pages-nav__item"><a class="link link--page" href="#page-welcome">Welcome</a></div>
-      <div class="pages-nav__item"><a class="link link--page" href="#page-book">Book a stay</a></div>
-      <div class="pages-nav__item"><a class="link link--page" href="#page-apply">Apply for a job</a></div>
-      <div class="pages-nav__item"><a class="link link--faded link--page" href="#page-welcome">Food &amp; catering<br />(coming soon!)</a></div>
-      <div class="pages-nav__item"><a class="link link--faded link--page" href="#page-welcome">Take a tour<br />(coming soon!)</a></div>
-      <div class="pages-nav__item"><a class="link link--faded link--page" href="#page-welcome">Explore the area<br />(coming soon!)</a></div>
-
-      <div class="pages-nav__item pages-nav__item--social">
-        <a class="link link--social link--faded" href="https://www.facebook.com/The-Elm-Inn-617037901779809/">
-          <svg class="icon icon-facebook2">
-            <use xlink:href="images/icons.svg#icon-facebook2"></use>
-          </svg>
-          <span class="text-hidden">Facebook</span></a>
-      </div>
-    </nav>
-    <!-- /navigation-->
-    <!-- pages stack -->
     <div class="pages-stack">
-
 
       <div class="page" id="page-welcome">
         <content class="welcome">
-
-          <a class="welcome__address" href="https://www.google.com/maps/place/The+Elm+Inn/@42.5903525,-74.9472031,17z/data=!4m13!1m7!3m6!1s0x89dc09c7ee064af9:0x7bc09f56719dc0d7!2s104+E+Main+St,+Milford,+NY+13807!3b1!8m2!3d42.5903525!4d-74.9450144!3m4!1s0x89dc09c7ee072f39:0x6ddba7daa091fe2b!8m2!3d42.5903525!4d-74.9450144">
-            <svg class="icon icon-location">
-              <use xlink:href="images/icons.svg#icon-location"></use>
-            </svg>
-            <span class="welcome__address-text">104 East Main<br />Milford, NY</span>
-          </a>
+          <ul class="cb-slideshow">
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+          </ul>
 
           <div class="welcome__logo">
-            <img class="welcome__logo-image" src="images/logo.png">n
+            <img class="welcome__logo-image" src="images/logo.png">
             <h1 class="welcome__logo-text">The Elm Inn</h1>
+            <!--<p class="text text&#45;&#45;small">Virtual tour and online ordering coming soon!</p>-->
           </div>
+
+          <p class="welcome__tag-line">Just minutes away from Cooperstown attractions, our bed &amp; breakfast rents bedrooms, hosts group &amp; team events, and offers a full restaurant &amp; bar, several party rooms, and a large outdoor area.</p>
 
           <!--<div class="welcome__primary-buttons">-->
             <!--<button class="welcome__book-button" onclick="location.href='#page-book2'">Book a room</button>-->
             <!--<button class="welcome__apply-button" onclick="location.href='#page-apply2'">Apply for job</button>-->
           <!--</div>-->
-
         </content>
       </div>
-
 
       <div class="page" id="page-book">
         <content class="book-now">
 
           <section class="wrap wrap--guttered maxwidth maxwidth--l align--center">
-            <img class="apply-now__banner" src="../images/elm-inn__opening-soon-banner.png" alt="The Elm Inn opens in May">
+            <img class="apply-now__banner" src="../images/room-photo.jpg" alt="Two queen bedroom for rent">
           </section>
           <section class="content">
             <div class="application">
@@ -87,21 +67,26 @@
                       <input type="tel" name="Phone" placeholder="Enter your phone number">
                     </div>
                     <div>
-                      <label>When are you available?</label>
-                      <input type="date" name="Date Available">
+                      <label>When are you checking in?</label>
+                      <input type="date" name="Check In">
                     </div>
                     <div>
-                      <label>Anything you'd like to say about yourself?</label>
-                      <textarea name="About Me" placeholder="Enter your message"></textarea>
+                      <label>When are you checking out?</label>
+                      <input type="date" name="Check Out">
+                    </div>
+                    <div>
+                      <label>Any special accommodations to consider</label>
+                      <textarea name="Special accommodations" placeholder="Enter your message"></textarea>
                     </div>
                   </fieldset>
                   <input type="text" name="_format" value="plain" class="hide" />
                   <input type="text" name="_gotcha" class="hide" />
                   <input type="hidden" name="_next" value="pages/thank-you.html" />
-                  <input type="hidden" name="_subject" value="Employment Application from Elm Inn website" />
+                  <input type="hidden" name="_subject" value="Booking Request from Elm Inn website" />
                   <button class="btn" type="submit">Submit</button>
                 </form>
               </div>
+              <h3 class="text--light align--center">Having trouble? Give us a call: (607) 286-9525</h3>
             </div>
           </section>
           <footer role="contentinfo">
@@ -158,6 +143,7 @@
                   <button class="btn" type="submit">Submit</button>
                 </form>
               </div>
+              <h3 class="text--light align--center">Having trouble? Give us a call: (607) 286-9525</h3>
             </div>
           </section>
           <footer role="contentinfo">
@@ -170,29 +156,108 @@
 
 
 
-      <div class="page" id="page-software">
+      <div class="page " id="page-food">
+        <content class="apply-now">
 
-      </div>
-      <div class="page" id="page-custom">
+          <section class="wrap wrap--guttered maxwidth maxwidth--l align--center">
+            <img class="apply-now__banner" src="../images/food-photo.jpg" alt="The Elm Inn opens in May">
+          </section>
 
+          <section class="content">
+            <div class="application">
+              <header class="wrap wrap--guttered maxwidth maxwidth--m align--center">
+                <h2>Let us help feed your people!</h2>
+                <h3 class="text--light">Please fill out the form and we will be in touch</h3>
+              </header>
+              <div class="wrap wrap--guttered maxwidth maxwidth--l">
+                <form class="flexform" action="https://formspree.io/dar@theelminn.com" method="POST">
+                  <fieldset>
+                    <div>
+                      <label>What's your name?</label>
+                      <input type="text" name="Name" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                      <label>What's your email address?</label>
+                      <input type="email" name="Email" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                      <label>What's your phone number?</label>
+                      <input type="tel" name="Phone" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                      <label>What is the date of the event?</label>
+                      <input type="date" name="Date of event">
+                    </div>
+                    <div>
+                      <label>How many people do you plan to serve?</label>
+                      <input type="number" name="Number of guests">
+                    </div>
+                    <div>
+                      <label>Tell us just a little about the event?</label>
+                      <textarea name="About Event" placeholder="Enter your message"></textarea>
+                    </div>
+                  </fieldset>
+                  <input type="text" name="_format" value="plain" class="hide" />
+                  <input type="text" name="_gotcha" class="hide" />
+                  <input type="hidden" name="_next" value="pages/thank-you.html" />
+                  <input type="hidden" name="_subject" value="Catering Request from Elm Inn website" />
+                  <button class="btn" type="submit">Submit</button>
+                </form>
+              </div>
+              <h3 class="text--light align--center">Having trouble? Give us a call: (607) 286-9525</h3>
+            </div>
+          </section>
+          <footer role="contentinfo">
+            <div class="wrap wrap--guttered maxwidth maxwidth--xl">
+              <p>Copyright &copy; 2016 by <a href="/" title="Cooperstown Elm Inn">The Elm Inn</a></p>
+            </div>
+          </footer>
+        </content>
       </div>
-      <div class="page" id="page-training">
 
-      </div>
-      <div class="page" id="page-buy">
-
-      </div>
-      <div class="page" id="page-blog">
-
-      </div>
-      <div class="page" id="page-contact">
-
-      </div>
     </div>
     <!-- /pages-stack -->
-    <button class="menu-button"><span>Menu</span></button>
+
+    <div class="menu-bar">
+      <a class="location" href="https://www.google.com/maps/place/The+Elm+Inn/@42.5903525,-74.9472031,17z/data=!4m13!1m7!3m6!1s0x89dc09c7ee064af9:0x7bc09f56719dc0d7!2s104+E+Main+St,+Milford,+NY+13807!3b1!8m2!3d42.5903525!4d-74.9450144!3m4!1s0x89dc09c7ee072f39:0x6ddba7daa091fe2b!8m2!3d42.5903525!4d-74.9450144">
+        <svg class="icon icon-location">
+          <use xlink:href="images/icons.svg#icon-location"></use>
+        </svg>
+        <span class="location__address-text">104 East Main<br />Milford, NY</span>
+      </a>
+      <!--<span class="menu-text">Menu</span>-->
+      <button class="menu-button"><span></span></button>
+    </div>
+
+    <!-- navigation -->
+    <nav class="pages-nav">
+      <div class="pages-nav__item"><a class="link link--page" href="#page-welcome">Welcome</a></div>
+      <div class="pages-nav__item"><a class="link link--page" href="#page-book">Book your stay</a></div>
+      <div class="pages-nav__item"><a class="link link--page" href="#page-apply">Apply for a job</a></div>
+      <div class="pages-nav__item"><a class="link link--page" href="#page-food">Catering</a></div>
+      <!--<div class="pages-nav__item"><a class="link link&#45;&#45;faded link&#45;&#45;page" href="#page-welcome">Catering</div>-->
+
+      <div class="pages-nav__item pages-nav__item--social">
+        <a class="link link--social link--faded" href="https://www.facebook.com/The-Elm-Inn-617037901779809/">
+          <svg class="icon icon-facebook2">
+            <use xlink:href="images/icons.svg#icon-facebook2"></use>
+          </svg>
+          <span class="text-hidden">Facebook</span></a>
+      </div>
+    </nav>
+
     <script src="js/classie.js"></script>
     <script src="js/menu.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-78116459-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 
 </html>

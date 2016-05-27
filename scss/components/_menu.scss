@@ -1,8 +1,52 @@
 html.js,
 .js body {
-  background: #0e0f0f;
+  background: #263238;
   height: 100vh;
   overflow: hidden;
+}
+
+//body {
+//  height: calc(100vh - 75px);
+//  padding-top: 75px;
+//  padding-bottom: 75px;
+//}
+
+
+.menu-bar {
+  background-color: transparentize(#0e0f0f, .2);
+  height: 75px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-text {
+  float: right;
+}
+
+.location {
+  color: white;
+  left: 15px;
+  position: absolute;
+  top: 15px;
+
+  @media screen and (max-width: 40em) {
+    left: 5px;
+  }
+
+  .icon {
+    float: left;
+    font-size: 2em;
+    margin-top: .25em;
+  }
+
+  &__address-text {
+    display: block;
+    float: left;
+    margin-left: .5em;
+  }
 }
 
 // Pages nav
@@ -10,6 +54,7 @@ html.js,
 .pages-nav {
   background: #0e0f0f;
   display: flex;
+  margin-top: 75px;
   padding: 20px;
   text-align: center;
   flex-wrap: wrap;
@@ -19,7 +64,7 @@ html.js,
 
 .js .pages-nav {
   //background: transparent;
-  height: 50vh;
+  height: 45vh;
   left: 0;
   opacity: 0;
   padding: 30px;
@@ -173,18 +218,19 @@ html.js,
 /* Menu button */
 
 .menu-button {
-  border: 0;
-  outline: none;
   background: transparent;
+  border: 0;
   cursor: pointer;
   height: 35px;
-  right: 40px;
+  left: auto;
+  outline: none;
   padding: 0;
   position: absolute;
+  right: 30px;
   top: 15px;
+  -webkit-transition: all .6 ss;
   width: 40px;
   z-index: 1000;
-  -webkit-transition: all .6ss;
 
   &:hover {
     &::before,

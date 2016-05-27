@@ -1,8 +1,21 @@
 .book-now {
   background-color: get-color(background, light);
+  border: 5px solid black;
+  border-radius: 3px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 75px;
 
-  section:first-of-type {
-    margin-top: 2.5em;
+  @media (max-width: 40em) {
+    border: 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    left: 0;
   }
 
   &__back-link {

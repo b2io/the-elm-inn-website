@@ -1,40 +1,23 @@
 .welcome {
-  background: url("../../images/welcome.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  &__address {
-    color: white;
-    left: 15px;
-    position: absolute;
-    top: 15px;
-
-    @media screen and (max-width: 40em) {
-      left: 5px;
-    }
-  }
-
-  &__address .icon {
-    float: left;
-    font-size: 2em;
-    margin-top: .25em;
-  }
-
-  &__address-text {
-    display: block;
-    float: left;
-    margin-left: .5em;
-  }
-
   &__logo {
-    margin-top: 20vh;
     text-align: center;
+    margin-top: 20vh;
     width: 100%;
+
+    @media (min-height: 650px) {
+      margin-top: 20vh;
+    }
+
+    @media (max-height: 550px) {
+      float: left;
+      margin-top: 75px;
+      width: 50%;
+    }
+
+    .text {
+      color: #eee;
+      margin: 0 auto;
+    }
   }
 
   &__logo-image {
@@ -45,17 +28,28 @@
     color: white;
   }
 
-  &__primary-buttons {
-    margin: auto;
-    width: 300px;
+  &__tag-line {
+    color: #eee;
+    position: absolute;
+    left: 5vw;
+    right: 5vw;
+    bottom: 20px;
+    text-align: justify;
+    text-indent: 3em;
+
+    @media (max-height: 550px) {
+      left: 50vw;
+      bottom: auto;
+      top: 90px;
+    }
   }
 
-  &__book-button,
-  &__apply-button {
-    @extend .btn, .btn--secondary;
-    color: white;
-    border-color: white;
-    width: 100%;
+  &__links {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    white-space: nowrap;
+    dislay: block;
   }
 }
 

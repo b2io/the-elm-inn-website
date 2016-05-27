@@ -16,10 +16,10 @@
 @import "functions/getcolor";
 
 // Components
+@import "components/background";
 @import "components/base";
 @import "components/buttons";
 @import "components/card";
-
 @import "components/content";
 @import "components/forms";
 @import "components/footer";
@@ -36,9 +36,11 @@
 @import "components/print";
 
 // Pages
+@import "pages/404";
 @import "pages/welcome";
 @import "pages/apply-now";
 @import "pages/book-now";
+@import "pages/thank-you";
 
 // Templates
 //@import "templates/full-height-footer";
